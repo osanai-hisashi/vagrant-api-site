@@ -1,0 +1,13 @@
+<settings>
+  <proxies>
+    <proxy>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host><%= node['proxy']['host'] %></host>
+      <port><%= node['proxy']['port'] %></port>
+      <username><%= node['proxy']['user'] %></username>
+      <password><%= node['proxy']['password'] %></password>
+      <nonProxyHosts>www.google.com|*.somewhere.com</nonProxyHosts>
+    </proxy>
+  </proxies>
+</settings>
